@@ -25,7 +25,7 @@ export class FaceSnapComponent implements OnInit {
     // this.description = 'Bulbizarre est une espèce de Pokémon de type Herbe/Poison !';
     // this.date = new Date();
     // this.snap = 6;
-    
+   
     this.buttonText = 'Oh Snap';
   }
 
