@@ -1,9 +1,12 @@
-<div class="card border" style="width: 18rem;">
-    <h2>{{title}}</h2>
-    <p>Mise en ligne le {{date}}</p>
-    <img [src]="imgUrl" [alt]="title">
-    <p>{{description}}</p>
-    <p>
-        <button (click)="Addsnap()">{{buttonText}}</button>
-        👍 {{snap}}</p>
+<div class="page">
+    <div class="card">
+        <h2>{{facesnap.title}}</h2>
+        <p>Mise en ligne le {{facesnap.date}}</p>
+        <img [src]="facesnap.imgUrl" [alt]="facesnap.title">
+        <p>{{facesnap.description}}</p>
+        <p>
+            <button (click)="Addsnap()">{{buttonText}}</button>
+            👍 {{facesnap.snap}}</p>
+    </div>
+    
 </div>

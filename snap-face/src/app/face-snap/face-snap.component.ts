@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Facesnap } from '../models/face-snap-model';
 
 @Component({
   selector: 'app-face-snap',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./face-snap.component.css']
 })
 export class FaceSnapComponent implements OnInit {
+  @Input () facesnap!: Facesnap;
+
   title!: string;
   description!: string;
   date!: Date;
@@ -26,11 +29,11 @@ export class FaceSnapComponent implements OnInit {
   Addsnap() {
     if (this.buttonText === 'Oh Snap')
     {
-      this.snap++;
+      this.facesnap.snap++;
       this.buttonText = 'Non Snap'
     }
     else {
-      this.snap--;
+      this.facesnap.snap--;
       this.buttonText ='Oh Snap'
     }
   }
