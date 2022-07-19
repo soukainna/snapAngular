@@ -1,5 +1,7 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit, Input } from '@angular/core';
 import { Facesnap } from '../models/face-snap-model';
+
 
 @Component({
   selector: 'app-face-snap',
@@ -9,20 +11,21 @@ import { Facesnap } from '../models/face-snap-model';
 export class FaceSnapComponent implements OnInit {
   @Input () facesnap!: Facesnap;
 
-  title!: string;
-  description!: string;
-  date!: Date;
-  snap!: number;
-  imgUrl!: string; 
+  // title!: string;
+  // description!: string;
+  // date!: Date;
+  // snap!: number;
+  // imgUrl!: string; 
   buttonText!: string;
-  constructor() { }
+  constructor(public datepipe: DatePipe) { }
 
   ngOnInit(): void {
-    this.title = 'Bulbizarre';
-    this.imgUrl = 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png'
-    this.description = 'Bulbizarre est une espèce de Pokémon de type Herbe/Poison !';
-    this.date = new Date();
-    this.snap = 6;
+    // this.title = 'Bulbizarre';
+    // this.imgUrl = 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png'
+    // this.description = 'Bulbizarre est une espèce de Pokémon de type Herbe/Poison !';
+    // this.date = new Date();
+    // this.snap = 6;
+    
     this.buttonText = 'Oh Snap';
   }
 
@@ -37,5 +40,7 @@ export class FaceSnapComponent implements OnInit {
       this.buttonText ='Oh Snap'
     }
   }
+
+  
 
 }

@@ -11,6 +11,7 @@ export class Facesnap {
     this.description = description;
     this.date = date;
     this.snap = snap;
+    
    
    }
 
