@@ -10,7 +10,7 @@ export class FaceSnapComponent implements OnInit {
   description!: string;
   date!: Date;
   snap!: number;
-  imgUrl!: string;
+  imgUrl!: string; 
   constructor() { }
 
   ngOnInit(): void {
@@ -19,6 +19,10 @@ export class FaceSnapComponent implements OnInit {
     this.description = 'Bulbizarre est une espèce de Pokémon de type Herbe/Poison !';
     this.date = new Date();
     this.snap = 6;
+  }
+
+  Addsnap() {
+    this.snap++;
   }
 
 }
