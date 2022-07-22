@@ -15,7 +15,6 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<app-face-snap [facesnap]="mysnap"></app-face-snap>
-<app-face-snap [facesnap]="twosnap"></app-face-snap>
-<app-face-snap [facesnap]="treesnap"></app-face-snap>
+<app-face-snap *ngFor="let snaptab of facesnaptab" [facesnap]="snaptab"></app-face-snap>
+
 <router-outlet></router-outlet>
