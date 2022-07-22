@@ -36,3 +36,11 @@
     background-color: #daab55;
     border: none;
 }
+
+.card .butt {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #ffa600;
+    border: none;
+}

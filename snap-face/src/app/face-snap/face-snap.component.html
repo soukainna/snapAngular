@@ -6,7 +6,7 @@
         <p>{{facesnap.description}}</p>
         <p *ngIf="facesnap.location">{{facesnap.location}}</p>
         <p>
-            <button (click)="Addsnap()">{{buttonText}}</button>
+            <button class="butt" (click)="Addsnap()" [ngClass]="{ butt: buttonText === 'Oh Snap'}">{{buttonText}}</button>
             <span [ngStyle]="{ color: 'rgb(0, 255, 0)' }">👍 {{facesnap.snap}}</span>
         </p>
     </div>
